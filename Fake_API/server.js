@@ -64,7 +64,7 @@ app.get("/api/users/new", (req, res) => {
   });
 
   app.get("/api/user/company", (req, res) => {
-    res.json(new Company(), new User());
+    res.json([new Company(), new User()]);
   });
 
 
